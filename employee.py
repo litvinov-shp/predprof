@@ -19,3 +19,12 @@ class Employee:
         self.company_size = company_size
         self.role = role
         self.company = company
+
+    def to_csv(self, delimiter: str = ";") -> str:
+        """ Описание функции to_csv
+        Превращает Employee в строку csv
+        @:param delimiter - разделитель csv
+        :return: str
+        """
+        parameters = [self.salary, self.work_type, self.company_size, self.role, self.company]
+        return delimiter.join(map(str, parameters))
