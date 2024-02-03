@@ -5,7 +5,7 @@ class Employee:
 
     @:param salary - заработная плата
 
-    @:param work_type - тип контракта (трудоустройства)
+    @:param work_type - тип трудоустройства
 
     @:param company_size - количество сотрудников в компании
 
